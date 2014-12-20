@@ -51,22 +51,93 @@
 
 
 
-
 #include <MeggyJrSimple.h> // Required code, line 1 of 2.
 
-int level = 1
-int lights = 2
+byte gameSequence [4], playerSequence [4];
+boolean correct, cont, repeat, start;
 
+int level = 1;
 
 
 void setup()                    // run once, when the sketch starts
-{
-  MeggyJrSimpleSetup();      // Required code, line 2 of 2.
+{ 
+  MeggyJrSimpleSetup();  // Required code, line 2 of 2.
+  start = true;
+  
 }
 
 
 void loop()
 {
+  While
+}  
+
+void end()
+{
+ Tone_Start(5,1000);
+ ClearSlate();
+ redX;
+ DisplaySlate();
+ delay(1000);
+ Tone_Update();
+
+ 
+
+  
 }
 
+void Up()                // Draw Up arrow.
+{
+  DrawPx(4,7,Blue);
+  DisplaySlate();
+}
 
+void Down()
+{
+  DrawPx(4,0,Blue);
+  DisplaySlate();
+}
+
+void Left()
+{
+  DrawPx(0,4,Blue);
+  DisplaySlate();
+}
+
+void Right()
+{
+  DrawPx(7,4,Blue);
+  DisplaySlate();
+}
+
+void redX()
+{
+  
+  DrawPx(0,0,Red);
+  DrawPx(0,1,Red);
+  DrawPx(1,1,Red);
+  DrawPx(1,0,Red);
+  DrawPx(6,0,Red);
+  DrawPx(7,0,Red);
+  DrawPx(7,1,Red);
+  DrawPx(6,1,Red);
+  DrawPx(2,2,Red);
+  DrawPx(5,2,Red);
+  DrawPx(3,3,Red);
+  DrawPx(4,3,Red);
+  DrawPx(3,4,Red);
+  DrawPx(4,4,Red);
+  DrawPx(2,5,Red);
+  DrawPx(5,5,Red);
+  DrawPx(0,6,Red);
+  DrawPx(1,6,Red);
+  DrawPx(6,6,Red);
+  DrawPx(7,6,Red);
+  DrawPx(0,7,Red);
+  DrawPx(1,7,Red);
+  DrawPx(6,7,Red);
+  DrawPx(7,7,Red);
+  DisplaySlate();  
+}
+
+  
